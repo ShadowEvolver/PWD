@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="ico.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Inscription au Club Sportif AGHARAS</h1>
+        <form action="reponse.php" method="POST">
+            <div class="form-group">
+                <label for="civilite">Civilité <span class="required">*</span></label>
+                <select name="civilite" id="civilite" required>
+                    <option value="">-- Sélectionnez --</option>
+                    <option value="M">Monsieur</option>
+                    <option value="Mme">Madame</option>
+                    <option value="Mlle">Mademoiselle</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nom">Nom <span class="required">*</span></label>
+                <input type="text" name="nom" id="nom" required placeholder="Votre nom">
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom <span class="required">*</span></label>
+                <input type="text" name="prenom" id="prenom" required placeholder="Votre prénom">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="exemple@domaine.com">
+            </div>
+
+            <div class="form-group">
+                <label for="naissance">Date de naissance <span class="required">*</span></label>
+                <input type="date" name="naissance" id="naissance" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="text" name="telephone" id="telephone" placeholder="06 12 34 56 78">
+            </div>
+
+            <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <textarea name="adresse" id="adresse" rows="3" placeholder="Votre adresse complète"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="sport">Sport préféré <span class="required">*</span></label>
+                <select name="sport" id="sport" required>
+                    <option value="">-- Sélectionnez --</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="natation">Natation</option>
+                    <option value="athletisme">Athlétisme</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Niveau <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label class="radio-option"><input type="radio" name="niveau" value="debutant" required> Débutant</label>
+                    <label class="radio-option"><input type="radio" name="niveau" value="intermediaire"> Intermédiaire</label>
+                    <label class="radio-option"><input type="radio" name="niveau" value="avance"> Avancé</label>
+                    <label class="radio-option"><input type="radio" name="niveau" value="competition"> Compétition</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Disponibilités <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option"><input type="checkbox" name="jours[]" value="lundi"> Lundi</label>
+                    <label class="checkbox-option"><input type="checkbox" name="jours[]" value="mardi"> Mardi</label>
+                    <label class="checkbox-option"><input type="checkbox" name="jours[]" value="mercredi"> Mercredi</label>
+                    <label class="checkbox-option"><input type="checkbox" name="jours[]" value="jeudi"> Jeudi</label>
+                    <label class="checkbox-option"><input type="checkbox" name="jours[]" value="vendredi"> Vendredi</label>
+                    <label class="checkbox-option"><input type="checkbox" name="jours[]" value="samedi"> Samedi</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message supplémentaire</label>
+                <textarea name="message" id="message" rows="4" placeholder="Vos commentaires ou questions..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-option">
+                    <input type="checkbox" name="conditions" required> J'accepte les conditions générales <span class="required">*</span>
+                </label>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+</body>
+</html>

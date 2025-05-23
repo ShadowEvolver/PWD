@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.univinfo {
+    width: 1220px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+}
+.univinfo td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 0, 0);
+}
+.emploi {
+    width: 1220px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+}
+.emploi th, .emploi td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 0, 0);
+}
+.emploi th {
+    background-color: rgb(95, 121, 160);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.jour {
+    background-color: rgb(228, 238, 248);
+    font-weight: bold;
+    height: 50px;
+}
+
+.spacer {
+    background-color: rgb(0, 0, 0);
+    width: 1;
+}
+.vendredispacer {
+    background-color: rgb(0, 0, 0);
+    width: 260px;
+}
+.vendrediseance {
+    width: 1220px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+}
+.vendrediseance td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 0, 0);
+}
+.univinfo img {
+    width: 150px;
+    height: 50px;
+}
+hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+.text-center {
+    text-align: center;
+}
+.contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.contact-form {
+    background-color: rgb(249, 249, 249);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    font-size: 16px;
+}
+.form-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.btn[type="submit"] {
+    background-color: rgb(95, 121, 160);
+    color: white;
+}
+.prof-link {
+    color: rgb(239, 100, 100);
+    text-decoration: none;
+    font-weight: bold;
+}
+.prof-link:hover {
+    text-decoration: underline;
+}
+.course-link {
+    color: rgb(23, 113, 203);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+.course-link:hover {
+    background-color: rgb(52, 152, 219);
+    color: white;
+    text-decoration: none;
+}
+.course-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.course-content {
+    margin: 30px 0;
+}
+.course-content h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+.course-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.course-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.course-content li:last-child {
+    border-bottom: none;
+}
+.course-content a {
+    color: #2980b9;
+    text-decoration: none;
+}
+.course-content a:hover {
+    text-decoration: underline;
+}
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.back-btn:hover {
+    background-color: #2980b9;
+}

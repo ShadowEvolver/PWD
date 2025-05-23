@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Dynamic Web Programming</title>
+    <style>
+        
+        :root {
+            --primary-color: #0078D7;
+            --dark-bg: rgba(31, 31, 31, 0.8);
+            --text-color: #E0E0E0;
+            --hover-color: #005A9E;
+        }
+    
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            transition: color 0.25s;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        header {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+    
+        header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+    
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 5rem auto;
+            padding: 2.5rem;
+            background-color: var(--dark-bg);
+            border-radius: 11px;
+            flex: 1;
+        }
+
+        .p {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            transition: color 0.25s;
+            word-break: break-word;
+        }
+    
+        .folder {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(31, 31, 31, 0.9);
+            border-radius: 11px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+    
+        .folder a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            transition: color 0.25s;
+            word-break: break-word;
+        }
+    
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--dark-bg);
+            padding: 1rem;
+            border-top: 2px solid var(--primary-color);
+            width: 100%;
+            text-align: center;
+        }
+    
+        footer p {
+            margin: 0;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            color: var(--text-color);
+        }
+        
+        header img:hover, footer img:hover {
+            transform: scale(1.2);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .folder:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .folder a:hover {
+            color: var(--hover-color);
+        }
+
+        @media (min-width: 1024px) {
+            header {
+                flex-direction: row;
+                padding: 2rem 3rem;
+            }
+            
+            header img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 1200px;
+                padding: 2.5rem;
+            }
+            
+            .folder {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem;
+            }
+            
+            footer {
+                flex-direction: row;
+                justify-content: center;
+                padding: 1.25rem;
+            }
+            
+            footer img {
+                width: 50px;
+                height: 50px;
+                margin: 0 1rem 0 0;
+            }
+            
+            .folder a {
+                font-size: 1.25rem;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+                margin: 1rem auto;
+            }
+            
+            .folder {
+                padding: 1.25rem;
+            }
+            
+            footer img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+            
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Dynamic Web Programming - Practical Works</h1>
+    </header>
+
+    <div class="container">
+             
+        <h1 style="text-align: center;">TPs</h1>
+    
+        <section id="pratical-work-01" class="folder">
+            <p class="p">TP01: HTML</p>
+            <a href="TP1\index.html">TP1</a>
+        </section>
+
+        <section id="pratical-work-02" class="folder">
+            <p class="p">TP02: HTML</p>
+            <a href="TP2\index.html">TP2</a>
+        </section>
+
+        <section id="pratical-work-03" class="folder">
+            <p class="p">TP03: HTML & CSS</p>
+            <a href="TP3/index.html">TP3</a>
+        </section>
+
+        <section id="pratical-work-4" class="folder">
+            <p class="p">TP04: HTML & CSS</p>
+            <a href="TP4/index.html">TP4</a>
+        </section>
+
+        <section id="pratical-work-05" class="folder">
+            <p class="p">TP05: HTML & JS</p>
+            <a href="TP5/index.html">TP5</a>
+        </section>
+
+        <section id="pratical-work-06" class="folder">
+            <p class="p">TP06: HTML & JS</p>
+            <a href="TP6\Ex01\index.html">Ex01</a>
+            <a href="TP6\Ex02\index.html">Ex02</a>
+        </section>
+
+        <section id="pratical-work-07" class="folder">
+            <p class="p">TP07: HTML, CSS, JS & PHP</p>
+            <a href="TP7\index.html">Form1</a>
+        </section>
+
+        <section id="pratical-work-08" class="folder">
+            <p class="p">TP08: HTML, CSS, JS & PHP</p>
+            <a href="TP8/Ex01/calculatrice.html">Ex1</a>
+            <a href="TP8/Ex02/password.html">Ex2</a>
+            <a href="TP8/Ex03/index.html">Ex3</a>
+            <a href="TP8/Ex04/login.html">Ex4</a>
+            <a href="TP8/Ex05/index.php">Ex5</a>
+            <a href="TP8/Ex06/quiz.html">Ex6</a>
+        </section>
+
+        <section id="pratical-work-09" class="folder">
+            <p class="p">TP09: HTML, CSS, JS & PHP</p>
+            <p class="p">Another version of TP07</p>
+            <a href="TP9\index.html">Form2</a>
+        </section>
+
+        <section id="pratical-work-10" class="folder">
+            <p class="p">TP10: HTML, CSS, JS & PHP</p>
+            <a href="TP10\Ex01\login.php">Ex1</a>
+            <a href="TP10\Ex02\index.php">Ex2</a>
+            <a href="TP10\Ex03\index.php">Ex3</a>
+        </section>
+        <section id="pratical-work-10" class="folder">
+            <p class="p">Mini Projet</p>
+            <a href="Mini Projet/index.php">Projet</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Taha IHMADI | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

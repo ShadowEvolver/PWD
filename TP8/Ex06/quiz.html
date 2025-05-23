@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Culture Générale</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --correct-color: #2ecc71;
+            --incorrect-color: #e74c3c;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui;
+            background: var(--background-color);
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+
+        .question-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            color: #2d3436;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .option-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .option-label:hover {
+            border-color: var(--primary-color);
+            background: rgba(26, 115, 232, 0.05);
+        }
+
+        input[type="radio"] {
+            width: 1.2em;
+            height: 1.2em;
+        }
+
+        button {
+            width: 100%;
+            padding: 1.2rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        button:hover {
+            background: #1557b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Quiz Culture Générale</h2>
+        <form action="correction.php" method="post">
+            <div class="question-card">
+                <h3>1. Quelle est la capitale de la France ?</h3>
+                <div class="option-group">
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="a" required>
+                        <span>Londres</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="b">
+                        <span>Paris</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="c">
+                        <span>Berlin</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <h3>2. Combien de continents y a-t-il sur Terre ?</h3>
+                <div class="option-group">
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="a" required>
+                        <span>5</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="b">
+                        <span>6</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="c">
+                        <span>7</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <h3>3. Quel langage s'exécute côté serveur ?</h3>
+                <div class="option-group">
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="a" required>
+                        <span>JavaScript</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="b">
+                        <span>PHP</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="c">
+                        <span>HTML</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Valider le quiz</button>
+        </form>
+    </div>
+</body>
+</html>
